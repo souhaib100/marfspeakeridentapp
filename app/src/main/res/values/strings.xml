@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">marf speakeridentapp</string>
+    <string name="title_recognize">Recognize</string>
+    <string name="title_training">Training</string>
+</resources>
