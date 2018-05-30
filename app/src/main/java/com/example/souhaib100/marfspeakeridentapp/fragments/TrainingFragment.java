@@ -71,7 +71,7 @@ public class TrainingFragment extends Fragment {
             @Override
             public void onClick(final View v) {
                 final String file_name = new SimpleDateFormat("yyyyMMddHHmmss'.wav'").format(new Date());
-                final String[] MARF_ARGS = {"--single-train","-silence", "-bandstop", "-aggr", "-cos", working_path + File.separator + file_name};
+                final String[] MARF_ARGS = {"--single-train", "-aggr" ,"-raw", "-eucl", working_path + File.separator + file_name};
                 recorder.setFilepath(working_path);
                 recorder.setRecordNameFile(file_name);
                 //Set the length of the recognizing sample in milliseconds
@@ -108,7 +108,7 @@ public class TrainingFragment extends Fragment {
 
                             @Override
                             public void onFinish() {
-                                AddText addText = new AddText(path, 14, 12, file_name);
+                                AddText addText = new AddText(path, 14, 11, file_name);
                                 SpeakerIdentApp.main(MARF_ARGS);
                                 alertDialog.dismiss();
                                 tv_train_state.setText("Done training");
@@ -145,7 +145,7 @@ public class TrainingFragment extends Fragment {
 
                             @Override
                             public void onFinish() {
-                                AddText addText = new AddText(path, 14, 13, file_name);
+                                AddText addText = new AddText(path, 14, 12, file_name);
                                 SpeakerIdentApp.main(MARF_ARGS);
                                 alertDialog2.dismiss();
                                 tv_train_state.setText("Done training");

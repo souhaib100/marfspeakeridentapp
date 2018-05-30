@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <<<<<<< fbc77572edcfa9068da9a0aa9364e262bbe42024
+=======
+>>>>>>> fbc77572edcfa9068da9a0aa9364e262bbe42024
 # Built application files
 *.apk
 *.ap_
@@ -64,6 +67,7 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 fastlane/readme.md
+<<<<<<< HEAD
 =======
 *.iml
 .gradle
@@ -76,3 +80,5 @@ fastlane/readme.md
 /captures
 .externalNativeBuild
 >>>>>>> first
+=======
+>>>>>>> fbc77572edcfa9068da9a0aa9364e262bbe42024
