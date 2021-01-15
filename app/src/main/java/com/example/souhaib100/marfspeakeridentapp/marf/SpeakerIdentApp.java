@@ -1094,7 +1094,7 @@ public class SpeakerIdentApp
 //					case MARF.COSINE_SIMILARITY_MEASURE:
 //						// For now do nothing; customize when these methods
 //						// become parametrizable.
-//						break;
+						break;
 					
 					default:
 						assert false : "Unrecognized classification module";
